@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/*border: 0;*/
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body{
+    width:1024px;
+    margin:0 auto;
+}
+
+*{
+    max-width:100%;
+    padding:0;
+    margin:0;
+}
+
+/*NAVIGATION*/
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:2% 2%;
+}
+
+nav a{
+    text-decoration:none;
+    color:grey;
+}
+
+#iod-left{
+    text-align:center;
+}
+
+#iod-left a{
+    text-decoration:none;
+    color:black;
+    border:1px solid black;
+    padding:3% 15%;
+}
+
+hr{
+    border:1px solid black;
+    width:95%;
+    margin:0 auto;
+}
+
+
+/*INNOVATION ON DEMAND*/
+#innovation-on-demand{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    padding:5% 0%;
+}
+
+#iod-left h1{
+    font-size:80px;
+    text-align:center;
+}
+
+/*FEATURE-ABOUT*/
+#feature-about{
+    display:flex;
+}
+
+#feature-about section{
+    padding:5% 3%;
+}
+
+.middle-img{
+    display:flex;
+    width:95%;
+    margin:0 auto;
+}
+
+/*SERVICE-PRODUCT-VISION*/
+#service-product-vision{
+    display:flex;
+}
+
+#service-product-vision section{
+    padding:5% 3%;
+}
+
+/*FOOTER*/
+#contact{
+    padding-left:3%;
+}
+#contact h2{
+    padding-top:3%;
+}
+
+.copyright{
+    text-align:center;
+}
+
+/* TABLET VIEW */
+@media (max-width:800px){
+    #iod-right img{
+        display:none;
+    }
+    #innovation-on-demand{
+        justify-content:center;
+    }
+}
+
+
+
+/* MOBILE VIEW */
+@media (max-width:500px){
+    
+    nav{
+        flex-direction:column;
+    }
+    nav a{
+        font-size:20px;
+        border-bottom:1px solid black;
+        padding:4% 0;
+        width:100%;
+        text-align:center;
+    }
+    nav a .logo{
+        margin-top:auto;
+    }
+
+    nav a:nth-of-type(1) { order: 2; }
+    nav a:nth-of-type(2) { order: 3; }
+    nav a:nth-of-type(3) { order: 4; }
+    nav a:nth-of-type(4) { order: 5; }
+    nav a:nth-of-type(5) { order: 6; }
+    nav a:nth-of-type(6) { order: 7; }
+    
+    #iod-left{
+        padding-bottom:10%;
+    }
+    #feature-about{
+        flex-direction:column;
+    }
+    #service-product-vision{
+        flex-direction:column;
+    }
+
+}
